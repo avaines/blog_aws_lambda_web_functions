@@ -1,0 +1,37 @@
+import assert from 'node:assert/strict';
+const base = process.env.BASE_URL || 'http://127.0.0.1:3100';
+const started = performance.now();
+const response = await fetch(base);
+assert.equal(response.status, 200);
+let html = '', shellAt, deliveryAt;
+for await (const chunk of response.body) {
+  html += Buffer.from(chunk).toString();
+  if (shellAt === undefined && html.includes('Checking the kitchen')) shellAt = performance.now() - started;
+  if (deliveryAt === undefined && html.includes('Your reef is ready.')) deliveryAt = performance.now() - started;
+}
+assert.ok(html.includes('The Golden Flake'), 'Menu is present in server HTML');
+assert.ok(shellAt !== undefined && deliveryAt - shellAt > 1000, 'Suspense shell arrives before delayed content');
+const us = await (await fetch(base, { headers: { 'cloudfront-viewer-country': 'US' } })).text();
+assert.ok(us.includes('Sunset Reef'), 'Request headers affect SSR');
+const post = body => fetch(`${base}/api/orders`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+const valid = { name: 'Bubbles', address: '12 Coral Crescent', items: [{ id: 'flakes', quantity: 2 }], total: 1 };
+const order = await post(valid); assert.equal(order.status, 200);
+assert.equal((await order.json()).total, 999, 'Server determines price');
+for (const body of [null, {}, { ...valid, items: [{ id: 'missing', quantity: 1 }] }, { ...valid, items: [{ id: 'flakes', quantity: -1 }] }, { ...valid, items: [null] }, { ...valid, items: [valid.items[0], valid.items[0]] }]) assert.equal((await post(body)).status, 400);
+console.log(`PASS: SSR, request-dependent content, streaming (shell ${Math.round(shellAt)}ms / delivery ${Math.round(deliveryAt)}ms), checkout total, invalid-order rejection.`);
+const checkout = await post(valid);
+const receipt = await checkout.json();
+const cookie = checkout.headers.get('set-cookie').split(';')[0];
+const receiptPage = await fetch(`${base}/orders/${receipt.id}`, {headers: {cookie}});
+assert.equal(receiptPage.status, 200);
+const receiptHtml = await receiptPage.text();
+assert.ok(receiptHtml.includes('Bubbles') && receiptHtml.includes('£9.99'), 'Personal receipt rendered in raw HTML');
+assert.match(receiptPage.headers.get('cache-control'), /private|no-store/, 'Receipt must not be publicly cached');
+assert.equal((await fetch(`${base}/orders/${receipt.id}`)).status, 404, 'Another browser cannot see this receipt');
+assert.equal((await fetch(`${base}/orders/${receipt.id}`, {headers: {cookie: cookie + 'x'}})).status, 404, 'Tampered receipt rejected');
+assert.equal((await fetch(`${base}/orders/FIN-WRONG`, {headers: {cookie}})).status, 404);
+const dish = await fetch(`${base}/menu/flakes`);
+assert.equal(dish.status, 200);
+assert.ok((await dish.text()).includes('The Golden Flake'));
+assert.equal((await fetch(`${base}/menu/missing`)).status, 404);
+console.log('PASS: dish routes, unknown routes, personalised order SSR, private caching, missing/tampered receipt isolation.');
