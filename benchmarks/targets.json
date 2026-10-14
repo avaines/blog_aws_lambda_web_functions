@@ -1,0 +1,17 @@
+{
+  "amplify": {
+    "url": "https://main.d2sqc785l0hkc.amplifyapp.com",
+    "aws": { "region": "us-east-1", "appId": "d2sqc785l0hkc" },
+    "notes": "Amplify managed CDN; build configured for Node 22. Verify deployed commit."
+  },
+  "web-functions": {
+    "url": "https://jlnhztg68f0mrm22.g5p.lambda-web.us-east-1.on.aws",
+    "aws": {
+      "region": "us-east-1",
+      "functionName": "fin-and-feast-web",
+      "endpointName": "demo",
+      "logGroup": "/fin-and-feast/web-functions/fin-and-feast-web"
+    },
+    "notes": "Direct HomeRegion endpoint; Node 24 ARM64. Verify AWS identifiers and deployed commit."
+  }
+}

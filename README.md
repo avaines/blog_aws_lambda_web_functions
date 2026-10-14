@@ -56,3 +56,7 @@ The order route requires a request-time Next.js runtime; it cannot be served as 
 Receipts are cookie-backed demo data, not a durable order database: only the latest order is retained, for one hour. No address is stored in the receipt. This avoids process memory or local disk assumptions that would break across Lambda instances. `ORDER_COOKIE_SECRET` can provide a shared signing key across instances; without it, the app uses a **public demo key**, so signatures are not a security boundary for real orders. Use fictional names only. Real order storage, authentication and secrets management belong to a later production design.
 
 See [iac/README.md](iac/README.md) for the two independent Terraform roots.
+
+## Performance comparison
+
+See [benchmarks/README.md](benchmarks/README.md) for Playwright journeys, HTML/CSV reports and optional read-only CloudWatch collection against both deployed demos.

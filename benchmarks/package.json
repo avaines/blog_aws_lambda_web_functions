@@ -1,0 +1,20 @@
+{
+  "name": "fin-and-feast-benchmarks",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "node src/run.mjs",
+    "report": "node src/report.mjs",
+    "collect:aws": "node src/cloudwatch.mjs",
+    "check": "node --check src/run.mjs && node --check src/report.mjs && node --check src/cloudwatch.mjs && node --test src/stats.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.58.0",
+    "@aws-sdk/client-cloudwatch": "^3.0.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
