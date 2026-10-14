@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-10-14T15:02:28.124Z",
+  "iterations": 10,
+  "modes": [
+    "fresh",
+    "repeat"
+  ],
+  "scenarios": [
+    "home",
+    "dish",
+    "navigate",
+    "checkout"
+  ],
+  "targets": {
+    "amplify": {
+      "url": "https://main.d2sqc785l0hkc.amplifyapp.com",
+      "aws": {
+        "region": "us-east-1",
+        "appId": "d2sqc785l0hkc"
+      },
+      "notes": "Amplify managed CDN; build configured for Node 22. Verify deployed commit."
+    },
+    "web-functions": {
+      "url": "https://jlnhztg68f0mrm22.g5p.lambda-web.us-east-1.on.aws",
+      "aws": {
+        "region": "us-east-1",
+        "functionName": "fin-and-feast-web",
+        "endpointName": "demo",
+        "logGroup": "/fin-and-feast/web-functions/fin-and-feast-web"
+      },
+      "notes": "Direct HomeRegion endpoint; Node 24 ARM64. Verify AWS identifiers and deployed commit."
+    }
+  },
+  "runner": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "v22.5.1",
+    "browser": "156.0.8078.4",
+    "location": "london-laptop",
+    "localCommit": "0b02193f17dc320bb35c30deaef6cd045392adbe",
+    "deployedCommit": "unverified"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "trace": false,
+  "observationMs": 1500,
+  "notes": [
+    "Serial alternating target order; no retries.",
+    "Fresh context does not guarantee cold server, DNS or TLS.",
+    "Repeat mode has one full unmeasured priming journey in that context.",
+    "LCP is observed only until the fixed observation cutoff; not field Web Vitals.",
+    "Client navigation and checkout timings include Playwright dispatch/actionability overhead."
+  ],
+  "finishedAt": "2026-10-14T15:20:06.845Z",
+  "failures": 0
+}

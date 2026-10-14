@@ -1,0 +1,1359 @@
+{
+  "collectedAt": "2026-10-14T15:22:53.681Z",
+  "window": {
+    "start": "2026-10-14T15:02:00.000Z",
+    "end": "2026-10-14T15:21:00.000Z"
+  },
+  "notes": [
+    "Minute-aligned window includes priming, static assets and potentially unrelated traffic.",
+    "Missing datapoints are not converted to zero. Recollect after publication delay.",
+    "Amplify Latency is seconds and excludes client network time; no equivalent Web Functions latency metric is assumed."
+  ],
+  "targets": {
+    "amplify": {
+      "series": [
+        {
+          "metric": {
+            "Namespace": "AWS/AmplifyHosting",
+            "MetricName": "5xxErrors",
+            "Dimensions": [
+              {
+                "Name": "App",
+                "Value": "d2sqc785l0hkc"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/AmplifyHosting",
+            "MetricName": "Latency",
+            "Dimensions": [
+              {
+                "Name": "App",
+                "Value": "d2sqc785l0hkc"
+              }
+            ]
+          },
+          "statistic": "p95",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 1.4571394168212248
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 1.6810867847175552
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 1.6859004037530059
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 1.6571265942126263
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 0.15940463038157918
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 1.6232926488029056
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 1.6746899986931656
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 1.6305719124165494
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 1.649880094329568
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 1.6356475863994335
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 1.6550943646056817
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 1.6463189109317284
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 1.6244739280069438
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 1.6394122087424072
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 1.6468220796490831
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 1.6531984931128763
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 1.6269043511791732
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 1.6525655686662122
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/AmplifyHosting",
+            "MetricName": "4xxErrors",
+            "Dimensions": [
+              {
+                "Name": "App",
+                "Value": "d2sqc785l0hkc"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 133
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/AmplifyHosting",
+            "MetricName": "BytesDownloaded",
+            "Dimensions": [
+              {
+                "Name": "App",
+                "Value": "d2sqc785l0hkc"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 388306
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 431396
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 592608
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 601890
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 870485
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 574193
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 687079
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 567366
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 569144
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 719736
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 608049
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 666785
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 714541
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 681711
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 585583
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 692379
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 719542
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 607914
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/AmplifyHosting",
+            "MetricName": "BytesUploaded",
+            "Dimensions": [
+              {
+                "Name": "App",
+                "Value": "d2sqc785l0hkc"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 3872
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 4755
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 7866
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 7387
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 58254
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 8516
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 8169
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 6716
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 6213
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 8851
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 7248
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 6925
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 8320
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 7233
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 6926
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 7515
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 8851
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 7248
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/AmplifyHosting",
+            "MetricName": "Requests",
+            "Dimensions": [
+              {
+                "Name": "App",
+                "Value": "d2sqc785l0hkc"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 41
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 53
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 77
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 312
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 79
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 67
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 69
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 87
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 80
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 70
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 89
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 77
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 80
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 87
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 80
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    "web-functions": {
+      "series": [
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "HTTPResponseStatusClass4XX",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              },
+              {
+                "Name": "EndpointName",
+                "Value": "demo"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "EnvironmentActiveTime",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 120002
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 179999
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 60001
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 180000
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 59999
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 179999
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 220801
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 59999
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 60001
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 60000
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 59999
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 60001
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "EnvironmentMaxMemoryUsage",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              }
+            ]
+          },
+          "statistic": "Maximum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 219
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 223
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 226
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 226
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 226
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 228
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 229
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 229
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 229
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 230
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 231
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 231
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 232
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 235
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 235
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 235
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 236
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 236
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 238
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "EnvironmentConcurrentRequests",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              }
+            ]
+          },
+          "statistic": "Maximum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 3
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 6
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "ResponseBytes",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 0
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 212482
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 906933
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 425792
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 708990
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 346987
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 1088226
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 409166
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 936624
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 595384
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 668271
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 446422
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 813141
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 457024
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 815964
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 705617
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 1026497
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 665428
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 446304
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "EnvironmentCPUTime",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 223
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 299
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 1162
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 369
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 1015
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 407
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 1254
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 389
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 1305
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 579
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 547
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 447
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 633
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 451
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 618
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 633
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 911
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 535
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 432
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web",
+            "MetricName": "ExecutedRequests",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              },
+              {
+                "Name": "EndpointName",
+                "Value": "demo"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 56
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 79
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 65
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 89
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 82
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 86
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 80
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 70
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 62
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 92
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 60
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 94
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 85
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 133
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 70
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 61
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web/Usage",
+            "MetricName": "EndpointActiveEnvironments",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              },
+              {
+                "Name": "EndpointName",
+                "Value": "demo"
+              },
+              {
+                "Name": "ExecutionRegion",
+                "Value": "us-east-1"
+              }
+            ]
+          },
+          "statistic": "Maximum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 2
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 1
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web/Usage",
+            "MetricName": "ExecutedRequests",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              },
+              {
+                "Name": "EndpointName",
+                "Value": "demo"
+              },
+              {
+                "Name": "ExecutionRegion",
+                "Value": "us-east-1"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": [
+            {
+              "time": "2026-10-14T15:02:00.000Z",
+              "value": 56
+            },
+            {
+              "time": "2026-10-14T15:03:00.000Z",
+              "value": 79
+            },
+            {
+              "time": "2026-10-14T15:04:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:05:00.000Z",
+              "value": 65
+            },
+            {
+              "time": "2026-10-14T15:06:00.000Z",
+              "value": 89
+            },
+            {
+              "time": "2026-10-14T15:07:00.000Z",
+              "value": 72
+            },
+            {
+              "time": "2026-10-14T15:08:00.000Z",
+              "value": 82
+            },
+            {
+              "time": "2026-10-14T15:09:00.000Z",
+              "value": 86
+            },
+            {
+              "time": "2026-10-14T15:10:00.000Z",
+              "value": 80
+            },
+            {
+              "time": "2026-10-14T15:11:00.000Z",
+              "value": 70
+            },
+            {
+              "time": "2026-10-14T15:12:00.000Z",
+              "value": 62
+            },
+            {
+              "time": "2026-10-14T15:13:00.000Z",
+              "value": 92
+            },
+            {
+              "time": "2026-10-14T15:14:00.000Z",
+              "value": 60
+            },
+            {
+              "time": "2026-10-14T15:15:00.000Z",
+              "value": 94
+            },
+            {
+              "time": "2026-10-14T15:16:00.000Z",
+              "value": 85
+            },
+            {
+              "time": "2026-10-14T15:17:00.000Z",
+              "value": 133
+            },
+            {
+              "time": "2026-10-14T15:18:00.000Z",
+              "value": 70
+            },
+            {
+              "time": "2026-10-14T15:19:00.000Z",
+              "value": 61
+            },
+            {
+              "time": "2026-10-14T15:20:00.000Z",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "metric": {
+            "Namespace": "AWS/Lambda/Web/Usage",
+            "MetricName": "EndpointActiveEnvironmentThrottles",
+            "Dimensions": [
+              {
+                "Name": "FunctionName",
+                "Value": "fin-and-feast-web"
+              },
+              {
+                "Name": "EndpointName",
+                "Value": "demo"
+              },
+              {
+                "Name": "ExecutionRegion",
+                "Value": "us-east-1"
+              }
+            ]
+          },
+          "statistic": "Sum",
+          "status": "Complete",
+          "points": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
